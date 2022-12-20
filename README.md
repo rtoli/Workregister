@@ -69,27 +69,23 @@ Employees may not be employed on Sundays and public holidays from 0 a.m. to midn
 For employment on Sundays and public holidays, the regulations shall apply apply accordingly, i.e. working hours on Sundays and public holidays may not exceed the specified maximum working hours.
 
 Symbols<br>
-role - The role of a worker. Either A for regular workers, N for night workers, P for production workers or NP for night workers who are directly employed for the execution of the production process.
-name surname - First name and last name of an employee, each beginning with an uppercase letter followed by any number of lowercase letters of the Latin alphabet
-birthdate - Date of birth of an employee in the format YYYY-MM-DD
-id - Natural number as a unique identifier of an employee.
-time - Date and time specification of a point in time in the format YYYY-MM-DDThh:mm
-working time - Specification of a duration in the format of a working time hh : mm
-start end - Start and end time of a working time, each specified in the format of a time YYYY-MM-DDThh:mm
-startp endp - Start and end time of a rest break, each specified in the format of a time YYYY-MM-DDThh:mm
+role - The role of a worker. Either A for regular workers, N for night workers, P for production workers or NP for night workers who are directly employed for the execution of the production process.<br><br>
+name surname - First name and last name of an employee, each beginning with an uppercase letter followed by any number of lowercase letters of the Latin alphabet<br>
+birthdate - Date of birth of an employee in the format YYYY-MM-DD<br><br>
+id - Natural number as a unique identifier of an employee.<br><br>
+time - Date and time specification of a point in time in the format YYYY-MM-DDThh:mm<br><br>
+working time - Specification of a duration in the format of a working time hh : mm<br><br>
+start end - Start and end time of a working time, each specified in the format of a time YYYY-MM-DDThh:mm<br><br>
+startp endp - Start and end time of a rest break, each specified in the format of a time YYYY-MM-DDThh:mm<br><br>
 
 Commands<br>
-employee role name surname birthdate - Register a new employee with a certain role. An id is assigned automatically
-
-workingtime id start end startp endp - Assign worktime to the employee with the given id as well as a break
-workingtime id start end - Assign worktime to the employee with the given id without a break
-
-list id - gives back the working times for an employee
-eg. worktime start end startp endp
-or  worktime start end
-
-list worktime - gives back the employees working at that point in time
-		the list is sorted in ascending order taking the id into account
-eg. name surname date role
-
+employee role name surname birthdate - Register a new employee with a certain role. An id is assigned automatically<br><br>
+workingtime id start end startp endp - Assign worktime to the employee with the given id as well as a break<br>
+workingtime id start end - Assign worktime to the employee with the given id without a break<br><br>
+list id - gives back the working times for an employee<br>
+eg. worktime start end startp endp<br>
+or  worktime start end<br><br>
+list worktime - gives back the employees working at that point in time<br>
+		the list is sorted in ascending order taking the id into account<br>
+eg. name surname date role<br><br>
 quit - ends the program
